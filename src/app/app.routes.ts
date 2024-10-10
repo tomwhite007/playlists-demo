@@ -1,3 +1,4 @@
+import { provideHttpClient } from '@angular/common/http';
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
@@ -8,5 +9,6 @@ export const routes: Routes = [
       import('./playlists/playlists.component').then(
         (m) => m.PlaylistsComponent
       ),
+    providers: [provideHttpClient()],
   },
 ];

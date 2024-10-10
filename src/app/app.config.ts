@@ -1,3 +1,4 @@
+import { provideHttpClient } from '@angular/common/http';
 import {
   ApplicationConfig,
   isDevMode,
@@ -17,15 +18,10 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     provideAnimationsAsync(),
-    // provideStore({ [playlistsFeatureKey]: playlistsReducer }),
     provideStore(),
     provideState(playlistsFeature),
     provideEffects(PlaylistsEffects),
     provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }),
-    // importProvidersFrom(
-    //   StoreModule.forRoot(reducers, { metaReducers }),
-    //   StoreDevtoolsModule.instrument(),
-    //   EffectsModule.forRoot()
-    // ),
+    provideHttpClient(),
   ],
 };

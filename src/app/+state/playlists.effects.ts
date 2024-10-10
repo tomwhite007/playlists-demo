@@ -1,22 +1,24 @@
 import { inject, Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { EMPTY, of } from 'rxjs';
-import { catchError, concatMap, map } from 'rxjs/operators';
+import { of } from 'rxjs';
+import { catchError, map, switchMap } from 'rxjs/operators';
+import { PlaylistsApiService } from './playlists-api.service';
 import { PlaylistsActions } from './playlists.actions';
 
 @Injectable()
 export class PlaylistsEffects {
   actions$: Actions = inject(Actions);
+  api = inject(PlaylistsApiService);
 
   playlistsPlaylists$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(PlaylistsActions.loadPlaylists),
-      concatMap(() =>
-        /** An EMPTY observable only emits completion. Replace with your own observable API request */
-        EMPTY.pipe(
+      switchMap(() =>
+        this.api.getPlaylists().pipe(
           map((data) => {
             console.log(
-              'PlaylistsActions.loadPlaylistsSuccess({ playlists: [] })'
+              'PlaylistsActions.loadPlaylistsSuccess({ playlists: [] })',
+              data
             );
             return PlaylistsActions.loadPlaylistsSuccess({ playlists: [] });
           }),
