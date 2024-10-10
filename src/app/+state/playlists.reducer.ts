@@ -18,10 +18,6 @@ export const initialState: State = adapter.getInitialState({
 
 export const playlistsReducer = createReducer(
   initialState,
-  on(PlaylistsActions.loadPlaylists, (state, action) => {
-    console.log('ha');
-    return state;
-  }),
   on(PlaylistsActions.loadPlaylistsSuccess, (state, action) =>
     adapter.upsertMany(action.playlists, state)
   ),

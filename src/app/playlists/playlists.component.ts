@@ -6,8 +6,7 @@ import {
   type OnInit,
 } from '@angular/core';
 import { MatButton } from '@angular/material/button';
-import { Store } from '@ngrx/store';
-import { PlaylistsActions } from '../+state/playlists.actions';
+import { PlaylistsFacade } from '../+state/playlists.facade';
 
 @Component({
   selector: 'app-playlists',
@@ -18,9 +17,9 @@ import { PlaylistsActions } from '../+state/playlists.actions';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PlaylistsComponent implements OnInit {
-  store = inject(Store);
+  playlistsFacade = inject(PlaylistsFacade);
 
   ngOnInit(): void {
-    this.store.dispatch(PlaylistsActions.loadPlaylists());
+    this.playlistsFacade.loadPlaylists();
   }
 }
