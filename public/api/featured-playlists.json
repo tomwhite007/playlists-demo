@@ -1,0 +1,257 @@
+{
+  "name": "Featured Playlists",
+
+  "content": [
+    {
+      "id": "pl.2b0e6e332fdf4b7a91164da3162127b5",
+
+      "kind": "playlist",
+
+      "name": "New Music Daily",
+
+      "url": "https://music.apple.com/us/playlist/new-music-daily/pl.2b0e6e332fdf4b7a91164da3162127b5?app=music\u0026at=1000l4QJ\u0026ct=330\u0026itscg=10000\u0026itsct=330",
+
+      "curator_name": "Apple Music",
+
+      "artwork": "https://is3-ssl.mzstatic.com/image/thumb/Features112/v4/8c/31/a4/8c31a417-7011-1e4f-4688-2a687fe6782b/0f90a86d-6851-4768-88f0-6e026589e3db.png/600x600SC.DN01.jpg?l=en-US"
+    },
+
+    {
+      "id": "pl.f4d106fed2bd41149aaacabb233eb5eb",
+
+      "kind": "playlist",
+
+      "name": "Today's Hits",
+
+      "url": "https://music.apple.com/us/playlist/todays-hits/pl.f4d106fed2bd41149aaacabb233eb5eb?app=music\u0026at=1000l4QJ\u0026ct=330\u0026itscg=10000\u0026itsct=330",
+
+      "curator_name": "Apple Music Hits",
+
+      "artwork": "https://is4-ssl.mzstatic.com/image/thumb/Features122/v4/de/c2/83/dec283c3-eb93-1863-b70e-3979cfdf13b5/33588761-d05a-47e3-afbc-b34210ee7e39.png/600x600SC.DN01.jpg?l=en-US"
+    },
+
+    {
+      "id": "pl.abe8ba42278f4ef490e3a9fc5ec8e8c5",
+
+      "kind": "playlist",
+
+      "name": "Rap Life",
+
+      "url": "https://music.apple.com/us/playlist/rap-life/pl.abe8ba42278f4ef490e3a9fc5ec8e8c5?app=music\u0026at=1000l4QJ\u0026ct=330\u0026itscg=10000\u0026itsct=330",
+
+      "curator_name": "Apple Music Hip-Hop",
+
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features122/v4/f4/82/d2/f482d2d3-53d6-d9fc-4337-25a73c149e29/244236a9-4a3e-47d3-b0cc-3e7d918a8eb3.png/600x600SC.DN01.jpg?l=en-US"
+    },
+
+    {
+      "id": "pl.5cb9c0f3ca9d4fc1bccbaf67ca6201e7",
+
+      "kind": "playlist",
+
+      "name": "Up Next",
+
+      "url": "https://music.apple.com/us/playlist/up-next/pl.5cb9c0f3ca9d4fc1bccbaf67ca6201e7?app=music\u0026at=1000l4QJ\u0026ct=330\u0026itscg=10000\u0026itsct=330",
+
+      "curator_name": "Apple Music Up Next",
+
+      "artwork": "https://is4-ssl.mzstatic.com/image/thumb/Features112/v4/af/3a/7c/af3a7c83-9203-737a-e2ba-d64013ad3b32/8399f981-2714-4988-b49c-12ba13b5809b.png/600x600SC.DN01.jpg?l=en-US"
+    },
+
+    {
+      "id": "pl.4b364b8b182f4115acbf6deb83bd5222",
+
+      "kind": "playlist",
+
+      "name": "¡Dale Play!",
+
+      "url": "https://music.apple.com/us/playlist/dale-play/pl.4b364b8b182f4115acbf6deb83bd5222?app=music\u0026at=1000l4QJ\u0026ct=330\u0026itscg=10000\u0026itsct=330",
+
+      "curator_name": "Apple Music Pop Latino",
+
+      "artwork": "https://is4-ssl.mzstatic.com/image/thumb/Features122/v4/ee/e7/72/eee7722a-5373-33e5-cb98-f3dd90952605/f740ac4f-9ec4-4bc7-a743-795728e30663.png/600x600SC.DN01.jpg?l=en-US"
+    },
+
+    {
+      "id": "pl.5ee8333dbe944d9f9151e97d92d1ead9",
+
+      "kind": "playlist",
+
+      "name": "A-List Pop",
+
+      "url": "https://music.apple.com/us/playlist/a-list-pop/pl.5ee8333dbe944d9f9151e97d92d1ead9?app=music\u0026at=1000l4QJ\u0026ct=330\u0026itscg=10000\u0026itsct=330",
+
+      "curator_name": "Apple Music Pop",
+
+      "artwork": "https://is4-ssl.mzstatic.com/image/thumb/Features112/v4/1e/44/de/1e44dee4-5e19-d3dd-b9ab-47969fcca8ce/7bde5164-ec13-4499-aa72-6f4f852f5f83.png/600x600SC.DN01.jpg?l=en-US"
+    },
+
+    {
+      "id": "pl.426a1044619f47d6b1f86b3f79ecf857",
+
+      "kind": "playlist",
+
+      "name": "#OnRepeat",
+
+      "url": "https://music.apple.com/us/playlist/onrepeat/pl.426a1044619f47d6b1f86b3f79ecf857?app=music\u0026at=1000l4QJ\u0026ct=330\u0026itscg=10000\u0026itsct=330",
+
+      "curator_name": "Apple Music Hip-Hop",
+
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features112/v4/c2/d0/c6/c2d0c6bc-134b-0fa3-9eee-a31c5abc2553/c216a65f-a3dc-4a59-90dc-a328dbb7b1c8.png/600x600SC.DN01.jpg?l=en-US"
+    },
+
+    {
+      "id": "pl.2a0b1ea7704842f4b956e959067b8389",
+
+      "kind": "playlist",
+
+      "name": "In My Room",
+
+      "url": "https://music.apple.com/us/playlist/in-my-room/pl.2a0b1ea7704842f4b956e959067b8389?app=music\u0026at=1000l4QJ\u0026ct=330\u0026itscg=10000\u0026itsct=330",
+
+      "curator_name": "Apple Music Pop",
+
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/0a/9a/e1/0a9ae10b-c36d-0ec8-e12b-a5453e457f2b/U0MtTVMtV1ctSW5fTXlfUm9vbS1BREFNX0lEPTExNDQ1NzA1MjkucG5n.png/600x600SC.DN01.jpg?l=en-US"
+    },
+
+    {
+      "id": "pl.74fdbee9582349a4bdca600cbdffa2e9",
+
+      "kind": "playlist",
+
+      "name": "The Plug",
+
+      "url": "https://music.apple.com/us/playlist/the-plug/pl.74fdbee9582349a4bdca600cbdffa2e9?app=music\u0026at=1000l4QJ\u0026ct=330\u0026itscg=10000\u0026itsct=330",
+
+      "curator_name": "Apple Music Hip-Hop",
+
+      "artwork": "https://is5-ssl.mzstatic.com/image/thumb/Features115/v4/9d/e6/04/9de60469-bb15-d8a2-35ef-a1a420f33a30/U0MtTVMtV1ctVGhlX1BsdWctQURBTV9JRD0xMTI0NTYwMjEyLnBuZw.png/600x600SC.DN01.jpg?l=en-US"
+    },
+
+    {
+      "id": "pl.5030c32a73e9459d82fae6f7b046d3ec",
+
+      "kind": "playlist",
+
+      "name": "Trap Kingz",
+
+      "url": "https://music.apple.com/us/playlist/trap-kingz/pl.5030c32a73e9459d82fae6f7b046d3ec?app=music\u0026at=1000l4QJ\u0026ct=330\u0026itscg=10000\u0026itsct=330",
+
+      "curator_name": "Apple Music Urbano Latino",
+
+      "artwork": "https://is5-ssl.mzstatic.com/image/thumb/Features115/v4/48/a2/21/48a22117-b917-fc68-97ea-073dfe64f761/U0MtTVMtV1ctVHJhcF9LaW5nei1BREFNX0lEPTExMzUwMjY0OTAucG5n.png/600x600SC.DN01.jpg?l=en-US"
+    },
+
+    {
+      "id": "pl.6bf4415b83ce4f3789614ac4c3675740",
+
+      "kind": "playlist",
+
+      "name": "danceXL",
+
+      "url": "https://music.apple.com/us/playlist/dancexl/pl.6bf4415b83ce4f3789614ac4c3675740?app=music\u0026at=1000l4QJ\u0026ct=330\u0026itscg=10000\u0026itsct=330",
+
+      "curator_name": "Apple Music Dance",
+
+      "artwork": "https://is5-ssl.mzstatic.com/image/thumb/Features122/v4/af/23/e4/af23e46e-c17c-2501-9d58-5ce8903b3d3e/858b5d5b-36e6-4c4c-a607-6537c1a367c4.png/600x600SC.DN01.jpg?l=en-US"
+    },
+
+    {
+      "id": "pl.2a86e272cf2349a99de68fd9cf7d4776",
+
+      "kind": "playlist",
+
+      "name": "Today's Indie Rock",
+
+      "url": "https://music.apple.com/us/playlist/todays-indie-rock/pl.2a86e272cf2349a99de68fd9cf7d4776?app=music\u0026at=1000l4QJ\u0026ct=330\u0026itscg=10000\u0026itsct=330",
+
+      "curator_name": "Apple Music Indie",
+
+      "artwork": "https://is2-ssl.mzstatic.com/image/thumb/Features115/v4/d4/00/8a/d4008afe-9212-7a52-2e48-3156b80b6d23/contsched.frfwyfqm.png/600x600SC.DN01.jpg?l=en-US"
+    },
+
+    {
+      "id": "pl.34c6bf42a176492abb918edb57b565e9",
+
+      "kind": "playlist",
+
+      "name": "Songs of the Summer",
+
+      "url": "https://music.apple.com/us/playlist/songs-of-the-summer/pl.34c6bf42a176492abb918edb57b565e9?app=music\u0026at=1000l4QJ\u0026ct=330\u0026itscg=10000\u0026itsct=330",
+
+      "curator_name": "Apple Music Pop",
+
+      "artwork": "https://is5-ssl.mzstatic.com/image/thumb/Features125/v4/54/14/ae/5414aea9-0dd0-a686-a32f-e3e174bddfae/U0MtTVMtV1ctU29uZ3Nfb2ZfdGhlX1N1bW1lci1BREFNX0lEPTEwMzU4MjE1NzIucG5n.png/600x600SC.DN01.jpg?l=en-US"
+    },
+
+    {
+      "id": "pl.0f11015342a9473c849f0af4ab5f509c",
+
+      "kind": "playlist",
+
+      "name": "The Sand Bar",
+
+      "url": "https://music.apple.com/us/playlist/the-sand-bar/pl.0f11015342a9473c849f0af4ab5f509c?app=music\u0026at=1000l4QJ\u0026ct=330\u0026itscg=10000\u0026itsct=330",
+
+      "curator_name": "Apple Music Country",
+
+      "artwork": "https://is3-ssl.mzstatic.com/image/thumb/Features115/v4/5b/09/08/5b090859-fb44-7c54-5f6c-233e5ee6ba00/U0MtTVMtV1ctVGhlX1NhbmRfQmFyLUFEQU1fSUQ9OTk3MTY1MDQxLnBuZw.png/600x600SC.DN01.jpg?l=en-US"
+    },
+
+    {
+      "id": "pl.29c85b7a007946c0b7c5ab445a544b0c",
+
+      "kind": "playlist",
+
+      "name": "Meditation Moments",
+
+      "url": "https://music.apple.com/us/playlist/meditation-moments/pl.29c85b7a007946c0b7c5ab445a544b0c?app=music\u0026at=1000l4QJ\u0026ct=330\u0026itscg=10000\u0026itsct=330",
+
+      "curator_name": "Apple Music Classical",
+
+      "artwork": "https://is3-ssl.mzstatic.com/image/thumb/Features125/v4/fd/9e/29/fd9e290b-6189-c723-6897-f7a7cc240c3e/U0MtTVMtV1ctTWVkaXRhdGlvbl9Nb21lbnRzLUFEQU1fSUQ9MTEyNDY3OTkyOS5wbmc.png/600x600SC.DN01.jpg?l=en-US"
+    },
+
+    {
+      "id": "pl.7e484c6b5169487d9d465a4b8bc68d09",
+
+      "kind": "playlist",
+
+      "name": "The Apple Music 1 List",
+
+      "url": "https://music.apple.com/us/playlist/the-apple-music-1-list/pl.7e484c6b5169487d9d465a4b8bc68d09?app=music\u0026at=1000l4QJ\u0026ct=330\u0026itscg=10000\u0026itsct=330",
+
+      "curator_name": "Apple Music",
+
+      "artwork": "https://is4-ssl.mzstatic.com/image/thumb/Features112/v4/c7/4f/d1/c74fd17e-9e92-2ac6-2d54-fff16e0bde90/51b75aee-483f-4c2f-b075-e3ca7e575376.png/600x600SC.DN01.jpg?l=en-US"
+    },
+
+    {
+      "id": "pl.b7ae3e0a28e84c5c96c4284b6a6c70af",
+
+      "kind": "playlist",
+
+      "name": "R\u0026B Now",
+
+      "url": "https://music.apple.com/us/playlist/r-b-now/pl.b7ae3e0a28e84c5c96c4284b6a6c70af?app=music\u0026at=1000l4QJ\u0026ct=330\u0026itscg=10000\u0026itsct=330",
+
+      "curator_name": "Apple Music R\u0026B",
+
+      "artwork": "https://is4-ssl.mzstatic.com/image/thumb/Features112/v4/91/4b/77/914b7749-8347-e837-a8ce-4f49cb3992cd/26f93823-f5af-4dc3-be68-6749dd82dd12.png/600x600SC.DN01.jpg?l=en-US"
+    },
+
+    {
+      "id": "pl.c79a0c8eac46444ea8058d68008ba2d4",
+
+      "kind": "playlist",
+
+      "name": "Wake Me Up!",
+
+      "url": "https://music.apple.com/us/playlist/wake-me-up/pl.c79a0c8eac46444ea8058d68008ba2d4?app=music\u0026at=1000l4QJ\u0026ct=330\u0026itscg=10000\u0026itsct=330",
+
+      "curator_name": "Apple Music Pop",
+
+      "artwork": "https://is3-ssl.mzstatic.com/image/thumb/Features115/v4/01/e1/f7/01e1f7e0-a8b0-6ffd-136b-d096e2c20c19/U0MtTVMtVEVSLU1vdGl2YXRpb25fV2FrZU1lVXAtQURBTV9JRD0xMTI0NTc3NjA0LnBuZw.png/600x600SC.DN01.jpg?l=en-US"
+    }
+  ]
+}
