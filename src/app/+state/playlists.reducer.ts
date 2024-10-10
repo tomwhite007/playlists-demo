@@ -5,17 +5,38 @@ import { Playlist } from './playlists.model';
 
 export const playlistsFeatureKey = 'playlists';
 
-export interface State extends EntityState<Playlist> {}
+export enum RemoteDataState {
+  NotLoaded = 'not-loaded',
+  Loading = 'loading',
+  Loaded = 'loaded',
+  Error = 'error',
+}
+
+export interface State extends EntityState<Playlist> {
+  remoteDataState: {
+    status: RemoteDataState;
+    error?: any;
+  };
+}
 
 export const adapter: EntityAdapter<Playlist> = createEntityAdapter<Playlist>();
 
-export const initialState: State = adapter.getInitialState({});
+export const initialState: State = adapter.getInitialState({
+  remoteDataState: { status: RemoteDataState.NotLoaded },
+});
 
 export const playlistsReducer = createReducer(
   initialState,
-  on(PlaylistsActions.loadPlaylistsSuccess, (state, action) =>
-    adapter.upsertMany(action.playlists, state)
+  on(PlaylistsActions.loadPlaylistsSuccess, (state, { playlists }) =>
+    adapter.upsertMany(playlists, {
+      ...state,
+      remoteDataState: { status: RemoteDataState.Loaded },
+    })
   ),
+  on(PlaylistsActions.loadPlaylistsFailure, (state, { error }) => ({
+    ...state,
+    remoteDataState: { status: RemoteDataState.Error, error },
+  })),
   on(PlaylistsActions.clearPlaylists, (state) => adapter.removeAll(state))
 );
 
