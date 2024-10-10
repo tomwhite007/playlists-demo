@@ -1,6 +1,13 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, type OnInit } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  type OnInit,
+} from '@angular/core';
 import { MatButton } from '@angular/material/button';
+import { Store } from '@ngrx/store';
+import { PlaylistsActions } from '../+state/playlists.actions';
 
 @Component({
   selector: 'app-playlists',
@@ -11,5 +18,9 @@ import { MatButton } from '@angular/material/button';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PlaylistsComponent implements OnInit {
-  ngOnInit(): void {}
+  store = inject(Store);
+
+  ngOnInit(): void {
+    this.store.dispatch(PlaylistsActions.loadPlaylists());
+  }
 }
