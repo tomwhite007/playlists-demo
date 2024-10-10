@@ -1,12 +1,12 @@
 import { createActionGroup, emptyProps, props } from '@ngrx/store';
 
-import { Playlists } from './playlists.model';
+import { Playlist } from './playlists.model';
 
 export const PlaylistsActions = createActionGroup({
   source: 'Playlists/API',
   events: {
     'Load Playlists': emptyProps(),
-    'Load Playlists Success': props<{ playlists: Playlists[] }>(),
+    'Load Playlists Success': props<{ playlists: Playlist[] }>(),
     'Load Playlists Failure': props<{ error: any }>(),
     'Clear Playlists': emptyProps(),
   },

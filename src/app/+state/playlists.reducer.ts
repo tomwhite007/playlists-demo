@@ -1,20 +1,15 @@
 import { EntityAdapter, EntityState, createEntityAdapter } from '@ngrx/entity';
 import { createFeature, createReducer, on } from '@ngrx/store';
 import { PlaylistsActions } from './playlists.actions';
-import { Playlists } from './playlists.model';
+import { Playlist } from './playlists.model';
 
 export const playlistsFeatureKey = 'playlists';
 
-export interface State extends EntityState<Playlists> {
-  // additional entities state properties
-}
+export interface State extends EntityState<Playlist> {}
 
-export const adapter: EntityAdapter<Playlists> =
-  createEntityAdapter<Playlists>();
+export const adapter: EntityAdapter<Playlist> = createEntityAdapter<Playlist>();
 
-export const initialState: State = adapter.getInitialState({
-  // additional entity state properties
-});
+export const initialState: State = adapter.getInitialState({});
 
 export const playlistsReducer = createReducer(
   initialState,

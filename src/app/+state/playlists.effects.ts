@@ -2,8 +2,10 @@ import { inject, Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { of } from 'rxjs';
 import { catchError, map, switchMap } from 'rxjs/operators';
+import { adaptPlaylistsApiResult } from './adapt-playlists-api-result.function';
 import { PlaylistsApiService } from './playlists-api.service';
 import { PlaylistsActions } from './playlists.actions';
+import { FeaturedPlaylistsApiResult } from './playlists.model';
 
 @Injectable()
 export class PlaylistsEffects {
@@ -15,12 +17,9 @@ export class PlaylistsEffects {
       ofType(PlaylistsActions.loadPlaylists),
       switchMap(() =>
         this.api.getPlaylists().pipe(
-          map((data) => {
-            console.log(
-              'PlaylistsActions.loadPlaylistsSuccess({ playlists: [] })',
-              data
-            );
-            return PlaylistsActions.loadPlaylistsSuccess({ playlists: [] });
+          map((result: FeaturedPlaylistsApiResult) => {
+            const playlists = adaptPlaylistsApiResult(result);
+            return PlaylistsActions.loadPlaylistsSuccess({ playlists });
           }),
           catchError((error) =>
             of(PlaylistsActions.loadPlaylistsFailure({ error }))
