@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -11,7 +10,7 @@ import { PlaylistsTableComponent } from './playlists-table/playlists-table.compo
 @Component({
   selector: 'app-playlists-page',
   standalone: true,
-  imports: [CommonModule, PlaylistsTableComponent],
+  imports: [PlaylistsTableComponent],
   templateUrl: './playlists-page.component.html',
   styleUrl: './playlists-page.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
