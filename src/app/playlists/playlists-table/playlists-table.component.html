@@ -1,39 +1,32 @@
-<div class="mat-elevation-z8">
-  <table mat-table [dataSource]="playlists()">
-    <ng-container matColumnDef="name">
-      <th mat-header-cell *matHeaderCellDef>Playlist</th>
-      <td mat-cell *matCellDef="let element">{{ element.name }}</td>
-    </ng-container>
+<table class="mat-elevation-z8" mat-table [dataSource]="playlists()">
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef>Playlist</th>
+    <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+  </ng-container>
 
-    <ng-container matColumnDef="curator">
-      <th mat-header-cell *matHeaderCellDef>Curated by</th>
-      <td mat-cell *matCellDef="let element">{{ element.curator }}</td>
-    </ng-container>
+  <ng-container matColumnDef="curator">
+    <th mat-header-cell *matHeaderCellDef>Curated by</th>
+    <td mat-cell *matCellDef="let element">{{ element.curator }}</td>
+  </ng-container>
 
-    <ng-container matColumnDef="image">
-      <th mat-header-cell *matHeaderCellDef></th>
-      <td mat-cell *matCellDef="let element">
-        <img
-          [src]="element.imgSrc"
-          [alt]="element.name"
-          width="50"
-          height="50"
-        />
-      </td>
-    </ng-container>
+  <ng-container matColumnDef="image">
+    <th mat-header-cell *matHeaderCellDef></th>
+    <td mat-cell *matCellDef="let element">
+      <img [src]="element.imgSrc" [alt]="element.name" width="50" height="50" />
+    </td>
+  </ng-container>
 
-    <ng-container matColumnDef="link">
-      <th mat-header-cell *matHeaderCellDef></th>
-      <td mat-cell *matCellDef="let element">
-        <a [href]="element.url">link</a>
-      </td>
-    </ng-container>
+  <ng-container matColumnDef="link">
+    <th mat-header-cell *matHeaderCellDef></th>
+    <td mat-cell *matCellDef="let element">
+      <a [href]="element.url">link</a>
+    </td>
+  </ng-container>
 
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr
-      mat-row
-      (click)="openPlaylist(row)"
-      *matRowDef="let row; columns: displayedColumns"
-    ></tr>
-  </table>
-</div>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr
+    mat-row
+    (click)="openPlaylist(row)"
+    *matRowDef="let row; columns: displayedColumns"
+  ></tr>
+</table>
