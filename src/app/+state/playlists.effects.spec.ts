@@ -6,50 +6,11 @@ import { Observable, of, throwError } from 'rxjs';
 import { PlaylistsApiService } from './playlists-api.service';
 import { PlaylistsActions } from './playlists.actions';
 import { PlaylistsEffects } from './playlists.effects';
-
-const mockFeaturedPLaylistsApiResult = {
-  name: 'Mock Featured Playlists',
-  content: [
-    {
-      id: 'pl.1',
-      kind: 'playlist',
-      name: 'New Music',
-      url: 'https://music1',
-      curator_name: 'Apple Music',
-      artwork: 'https://image1',
-    },
-    {
-      id: 'pl.2',
-      kind: 'playlist',
-      name: 'Hits',
-      url: 'https://music2',
-      curator_name: 'Apple Music Hits',
-      artwork: 'https://image2',
-    },
-  ],
-};
-
-const mockAdaptedPlaylistsArray = [
-  {
-    id: '1',
-    name: 'New Music',
-    url: 'https://music1',
-    curator: 'Apple Music',
-    imgSrc: 'https://image1',
-  },
-  {
-    id: '2',
-    name: 'Hits',
-    url: 'https://music2',
-    curator: 'Apple Music Hits',
-    imgSrc: 'https://image2',
-  },
-];
-
-const fakeApiError = {
-  code: 500,
-  message: 'fake error',
-};
+import {
+  fakeApiError,
+  mockAdaptedPlaylistsArray,
+  mockFeaturedPLaylistsApiResult,
+} from './playlists.spec-mocks';
 
 describe('PlaylistsEffects', () => {
   let actions$: Observable<any>;

@@ -37,12 +37,7 @@ export const playlistsReducer = createReducer(
     ...state,
     remoteDataState: { status: RemoteDataState.Error, error },
   })),
-  on(PlaylistsActions.clearPlaylists, (state) =>
-    adapter.removeAll({
-      ...state,
-      remoteDataState: { status: RemoteDataState.NotLoaded },
-    })
-  )
+  on(PlaylistsActions.clearPlaylists, () => initialState)
 );
 
 export const playlistsFeature = createFeature({
