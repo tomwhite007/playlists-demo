@@ -1,3 +1,4 @@
+import { NgOptimizedImage } from '@angular/common';
 import { Component, input, OnInit } from '@angular/core';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
@@ -6,7 +7,7 @@ import { Playlist } from '../../+state/playlists.model';
 @Component({
   selector: 'app-playlists-table',
   standalone: true,
-  imports: [MatTableModule, MatPaginatorModule],
+  imports: [MatTableModule, MatPaginatorModule, NgOptimizedImage],
   templateUrl: './playlists-table.component.html',
   styleUrl: './playlists-table.component.scss',
 })
