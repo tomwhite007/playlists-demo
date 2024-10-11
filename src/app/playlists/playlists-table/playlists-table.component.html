@@ -1,10 +1,12 @@
 <table>
-  @for (playlist of playlists(); track playlist.id) {
+  @for (list of playlists(); track list.id) {
   <tr>
-    <td>{{ playlist.name }}</td>
-    <td>{{ playlist.curator }}</td>
-    <td>{{ playlist.imgSrc }}</td>
-    <td>{{ playlist.url }}</td>
+    <td>{{ list.name }}</td>
+    <td>{{ list.curator }}</td>
+    <td>
+      <img [src]="list.imgSrc" [alt]="list.name" width="50" height="50" />
+    </td>
+    <td><a [href]="list.url">link</a></td>
   </tr>
   }
 </table>
