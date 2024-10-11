@@ -5,8 +5,8 @@ export const routes: Routes = [
   {
     path: 'playlists',
     loadComponent: () =>
-      import('./playlists/playlists.component').then(
-        (m) => m.PlaylistsComponent
+      import('./playlists-page/playlists-page.component').then(
+        (m) => m.PlaylistsPageComponent
       ),
   },
 ];
