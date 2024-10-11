@@ -46,6 +46,11 @@ const mockAdaptedPlaylistsArray = [
   },
 ];
 
+const fakeApiError = {
+  code: 500,
+  message: 'fake error',
+};
+
 describe('PlaylistsEffects', () => {
   let actions$: Observable<any>;
   let effects: PlaylistsEffects;
@@ -95,10 +100,6 @@ describe('PlaylistsEffects', () => {
 
     describe('when featured-playlists api fails', () => {
       beforeEach(() => {
-        const fakeApiError = {
-          code: 500,
-          message: 'fake error',
-        };
         mockPlaylistsApiService.getPlaylists.and.returnValue(
           throwError(() => fakeApiError)
         );
