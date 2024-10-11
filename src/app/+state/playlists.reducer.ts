@@ -12,7 +12,7 @@ export enum RemoteDataState {
   Error = 'error',
 }
 
-export interface State extends EntityState<Playlist> {
+export interface PlaylistsFeatureState extends EntityState<Playlist> {
   remoteDataState: {
     status: RemoteDataState;
     error?: any;
@@ -21,7 +21,7 @@ export interface State extends EntityState<Playlist> {
 
 export const adapter: EntityAdapter<Playlist> = createEntityAdapter<Playlist>();
 
-export const initialState: State = adapter.getInitialState({
+export const initialState: PlaylistsFeatureState = adapter.getInitialState({
   remoteDataState: { status: RemoteDataState.NotLoaded },
 });
 
@@ -37,7 +37,12 @@ export const playlistsReducer = createReducer(
     ...state,
     remoteDataState: { status: RemoteDataState.Error, error },
   })),
-  on(PlaylistsActions.clearPlaylists, (state) => adapter.removeAll(state))
+  on(PlaylistsActions.clearPlaylists, (state) =>
+    adapter.removeAll({
+      ...state,
+      remoteDataState: { status: RemoteDataState.NotLoaded },
+    })
+  )
 );
 
 export const playlistsFeature = createFeature({
@@ -48,5 +53,5 @@ export const playlistsFeature = createFeature({
   }),
 });
 
-export const { selectIds, selectEntities, selectAll, selectTotal } =
+export const { selectIds, selectEntities, selectAll, selectPlaylistsState } =
   playlistsFeature;

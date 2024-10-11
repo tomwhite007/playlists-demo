@@ -1,1 +1,5 @@
 <button mat-flat-button>Hello</button>
+
+@if (arePlaylistsLoaded()) {
+<app-playlists-table [playlists]="allPlaylists()" />
+}

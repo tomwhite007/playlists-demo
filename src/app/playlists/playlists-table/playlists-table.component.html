@@ -1,1 +1,10 @@
-<p>playlists-table works!</p>
+<table>
+  @for (playlist of playlists(); track playlist.id) {
+  <tr>
+    <td>{{ playlist.name }}</td>
+    <td>{{ playlist.curator }}</td>
+    <td>{{ playlist.imgSrc }}</td>
+    <td>{{ playlist.url }}</td>
+  </tr>
+  }
+</table>
