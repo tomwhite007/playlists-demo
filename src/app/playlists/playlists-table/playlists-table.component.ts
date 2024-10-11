@@ -13,7 +13,7 @@ import { Playlist } from '../../+state/playlists.model';
 export class PlaylistsTableComponent implements OnInit {
   playlists = input.required<Playlist[]>();
 
-  displayedColumns: string[] = ['name', 'curator', 'image', 'link'];
+  displayedColumns: string[] = ['name', 'curator', 'image'];
   dataSource!: MatTableDataSource<Playlist>;
 
   ngOnInit(): void {
