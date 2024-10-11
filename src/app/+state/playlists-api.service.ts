@@ -3,6 +3,8 @@ import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FeaturedPlaylistsApiResult } from './playlists.model';
 
+export const FEATURED_PLAYLISTS_API_URL = '/api/featured-playlists.json';
+
 @Injectable({
   providedIn: 'root',
 })
@@ -11,7 +13,7 @@ export class PlaylistsApiService {
 
   getPlaylists(): Observable<FeaturedPlaylistsApiResult> {
     return this.http.get<FeaturedPlaylistsApiResult>(
-      '/api/featured-playlists.json'
+      FEATURED_PLAYLISTS_API_URL
     );
   }
 }
