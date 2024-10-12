@@ -1,4 +1,8 @@
-<table class="mat-elevation-z8" mat-table [dataSource]="playlists()">
+<table
+  class="playlists-table mat-elevation-z8"
+  mat-table
+  [dataSource]="playlists()"
+>
   <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef>Playlist</th>
     <td mat-cell *matCellDef="let element">{{ element.name }}</td>
