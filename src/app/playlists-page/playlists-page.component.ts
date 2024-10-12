@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -9,14 +8,14 @@ import { PlaylistsFacade } from '../+state/playlists.facade';
 import { PlaylistsTableComponent } from './playlists-table/playlists-table.component';
 
 @Component({
-  selector: 'app-playlists',
+  selector: 'app-playlists-page',
   standalone: true,
-  imports: [CommonModule, PlaylistsTableComponent],
-  templateUrl: './playlists.component.html',
-  styleUrl: './playlists.component.scss',
+  imports: [PlaylistsTableComponent],
+  templateUrl: './playlists-page.component.html',
+  styleUrl: './playlists-page.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PlaylistsComponent implements OnInit {
+export class PlaylistsPageComponent implements OnInit {
   playlistsFacade = inject(PlaylistsFacade);
 
   arePlaylistsLoaded = this.playlistsFacade.arePlaylistsLoaded;
