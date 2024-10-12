@@ -9,6 +9,7 @@ describe('PlaylistsPageComponent', () => {
   let fixture: ComponentFixture<PlaylistsPageComponent>;
   let table: HTMLElement | null;
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const mockPlaylistsFacade: Record<keyof PlaylistsFacade, any> = {
     allPlaylists: signal([]),
     arePlaylistsLoaded: signal(false),
