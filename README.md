@@ -16,7 +16,7 @@ Some rules I've tried to follow:
 - Contained styles for non-repeating components
 - T-Dry (try to be dry)
 
-A JSON file in the `public/app` folder is used as an API to get Playlists and display them in a table.
+A JSON file in the `public/api` folder is used as an API to get Playlists and display them in a table.
 
 I've added several unit tests, but only as examples. I aim for above 95% coverage on an enterprise-grade app.
 
