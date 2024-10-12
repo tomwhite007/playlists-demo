@@ -16,20 +16,20 @@ Some rules I've tried to follow:
 - Contained styles for non-repeating components
 - T-Dry (try to be dry)
 
-A json file in the `public/api` folder is used as an api to get Playlists and display them in a table.
+A JSON file in the `public/app` folder is used as an API to get Playlists and display them in a table.
 
-Ive added several unit tests, but only as examples. I would normally aim above 95% coverage on an enterprise-grade app.
+I've added several unit tests, but only as examples. I aim for above 95% coverage on an enterprise-grade app.
 
 Unit test types I've focussed on:
 
 - Component initialisation and template logic tests (see `playlists-page.component.spec.ts`)
 - Effects using marbles testing
-- Selectors using projector function approach
+- Selectors using the projector function approach
 - Reducers as pure functions
 
-I've added a few basic Cypress tests in `cypress/e2e/playlists-page.spec.cy.ts`. I've not gone deep enough in this demo to make use of custom commands or shared selector / action code which would reduce code and increase uniformity in a larger project.
+I've added a few basic Cypress tests in `cypress/e2e/playlists-page.spec.cy.ts`. However, I haven't gone deep enough in this demo to use custom commands or shared selector/action code, which would reduce code and increase uniformity in a larger project.
 
-**Confession:** I struggled to import the NgRx Playlists feature as a lazy loaded state slice using the newer Standalone provider syntax. Given a bit more time I could definitely do this. I would have found this easy using the older lazy modules method but I wanted to build this app as pure Standalone as an exercise.
+Confession: I struggled to import the NgRx Playlists state feature as a lazy-loaded state slice using the newer Standalone provider syntax. Given a bit more time, I could definitely do this. I would have found this easy using the older lazy modules method, but I wanted to build this app as a pure Standalone app as an exercise.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
 
