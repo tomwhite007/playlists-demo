@@ -3,8 +3,11 @@
   padding: 1em;
 }
 
-.clickable {
+.row-data {
   cursor: pointer;
+  &:hover {
+    background-color: var(--mat-snack-bar-button-color);
+  }
 }
 
 .playlist-image {
