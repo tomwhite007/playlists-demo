@@ -18,13 +18,11 @@ describe('Playlists Page', () => {
   });
 
   it('Shows table with headings', () => {
-    const tableHeadings = cy
-      .get('.playlists-table > thead > tr > th')
-      .should((tableHeadings) => {
-        expect(tableHeadings.length).to.equal(3);
-        expect(tableHeadings[0]).to.contain.text('Playlist');
-        expect(tableHeadings[1]).to.contain.text('Curated by');
-      });
+    cy.get('.playlists-table > thead > tr > th').should((tableHeadings) => {
+      expect(tableHeadings.length).to.equal(3);
+      expect(tableHeadings[0]).to.contain.text('Playlist');
+      expect(tableHeadings[1]).to.contain.text('Curated by');
+    });
 
     cy.get('.playlists-table > tbody > tr').should('have.length', 18);
   });
