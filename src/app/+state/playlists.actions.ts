@@ -7,7 +7,7 @@ export const PlaylistsActions = createActionGroup({
   events: {
     'Load Playlists': emptyProps(),
     'Load Playlists Success': props<{ playlists: Playlist[] }>(),
-    'Load Playlists Failure': props<{ error: any }>(),
+    'Load Playlists Failure': props<{ error: unknown }>(),
     'Clear Playlists': emptyProps(),
   },
 });

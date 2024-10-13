@@ -15,7 +15,7 @@ export enum RemoteDataState {
 export interface PlaylistsFeatureState extends EntityState<Playlist> {
   remoteDataState: {
     status: RemoteDataState;
-    error?: any;
+    error?: unknown;
   };
 }
 

@@ -13,7 +13,7 @@ import {
 } from './playlists.spec-mocks';
 
 describe('PlaylistsEffects', () => {
-  let actions$: Observable<any>;
+  let actions$: Observable<unknown>;
   let effects: PlaylistsEffects;
   let expected: TestObservable;
 
