@@ -1,6 +1,6 @@
 :host {
   display: block;
-  background-color: rgb(250, 249, 253);
+  background-color: var(--mat-app-background-color);
 }
 
 .header-title {
