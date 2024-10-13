@@ -13,6 +13,7 @@ A JSON file in the `public/api` folder is used as an API to get Playlists and di
 Some rules I've tried to follow:
 
 - Nested component architecture
+- Lazy loaded routes
 - The adapter pattern for getting data
 - The facade pattern for state
 - Contained styles for non-repeating components
