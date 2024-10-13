@@ -26,10 +26,10 @@ I've added several unit tests, but only as examples. I aim for above 95% coverag
 
 Unit test types I've focussed on:
 
-- Component initialisation and template logic tests (see `playlists-page.component.spec.ts`)
-- Effects using marbles testing
-- Selectors using the projector function approach
-- Reducers as pure functions
+- Component initialisation and template logic tests (`playlists-page.component.spec.ts`)
+- Effects using marbles testing (`playlists.effects.spec.ts`)
+- Selectors using the projector function approach (`playlists.selectors.spec.ts`)
+- Reducers as pure functions (`playlists.reducer.spec.ts`)
 
 I've added a few basic Cypress tests in `cypress/e2e/playlists-page.spec.cy.ts`. However, I haven't gone deep enough in this demo to use custom commands or shared selector/action code, which would reduce code and increase uniformity in a larger project.
 
