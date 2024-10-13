@@ -1,5 +1,5 @@
 import { NgOptimizedImage } from '@angular/common';
-import { Component, input, OnInit } from '@angular/core';
+import { Component, inject, input, OnInit } from '@angular/core';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { Playlist } from '../../+state/playlists.model';
@@ -12,6 +12,8 @@ import { Playlist } from '../../+state/playlists.model';
   styleUrl: './playlists-table.component.scss',
 })
 export class PlaylistsTableComponent implements OnInit {
+  window = inject(Window);
+
   playlists = input.required<Playlist[]>();
 
   displayedColumns: string[] = ['name', 'curator', 'image'];
@@ -22,6 +24,6 @@ export class PlaylistsTableComponent implements OnInit {
   }
 
   openPlaylist(row: Playlist) {
-    window.location.href = row.url;
+    this.window.location.href = row.url;
   }
 }

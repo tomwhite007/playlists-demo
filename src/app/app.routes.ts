@@ -8,5 +8,6 @@ export const routes: Routes = [
       import('./playlists-page/playlists-page.component').then(
         (m) => m.PlaylistsPageComponent
       ),
+    providers: [{ provide: Window, useValue: window }],
   },
 ];

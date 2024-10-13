@@ -16,10 +16,17 @@ describe('PlaylistsPageComponent', () => {
     loadPlaylists: jasmine.createSpy(),
   };
 
+  const mockWindow = {
+    location: { href: '/test' },
+  };
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [PlaylistsPageComponent],
-      providers: [{ provide: PlaylistsFacade, useValue: mockPlaylistsFacade }],
+      providers: [
+        { provide: PlaylistsFacade, useValue: mockPlaylistsFacade },
+        { provide: Window, useValue: mockWindow },
+      ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
 
